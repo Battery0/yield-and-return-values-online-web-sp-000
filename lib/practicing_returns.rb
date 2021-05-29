@@ -4,10 +4,10 @@ def hello(array)
   i = 0
   collection = []
   while i < array.length
-    collection << yield(array[i])
+    collection.push(yield(array[i]))
     i += 1
   end
-  collection
+  p collection
 end
 
 
